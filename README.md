@@ -2,7 +2,9 @@
 
 An AI-powered market intelligence platform built with a hierarchical multi-agent architecture.
 
-MarketLens uses autonomous AI agents to analyze markets, identify competitors, evaluate risks, and generate structured research reports.
+MarketLens uses specialized AI agents to analyze markets, identify competitors, evaluate risks, and generate structured research reports.
+
+[🚀 Live Demo](https://marketlenslab.streamlit.app/)
 
 ---
 
@@ -12,11 +14,11 @@ Market research often requires significant time and effort to collect informatio
 
 MarketLens automates this process by combining:
 
-* Large Language Models (LLMs)
-* Hierarchical multi-agent orchestration
-* Web-based research
-* Structured data validation
-* Automated report generation
+- Large Language Models (LLMs)
+- Hierarchical multi-agent orchestration
+- Web-based research
+- Structured data validation
+- Automated report generation
 
 The result is a market intelligence workflow that transforms a simple market topic into an evidence-based analysis report.
 
@@ -24,54 +26,106 @@ The result is a market intelligence workflow that transforms a simple market top
 
 ## Architecture
 
-MarketLens uses a **hierarchical multi-agent workflow** in which the Planner Agent defines the research strategy, specialized research agents execute the analysis, and the Writer Agent synthesizes the findings into a structured report.
+MarketLens uses a hierarchical multi-agent workflow where the Planner Agent operates at a higher level to define the research strategy, while specialized research agents execute focused analysis tasks.
+
+The Writer Agent then synthesizes all findings into a structured and validated market intelligence report.
 
 ![MarketLens Architecture](assets/architecture.png)
 
 ### Workflow
 
-**1. Planner Agent**
+### 1. Planner Agent
 
-Defines the research strategy and guides the downstream research agents.
+The Planner Agent acts as the coordinator of the workflow.
 
-**2. Research Agents**
+Responsibilities:
 
-Two specialized agents independently investigate different aspects of the market:
+- Understand the research objective
+- Define analysis directions
+- Create research strategy
+- Guide downstream research agents
 
-* **Market Research Agent** — market size, growth trends, CAGR, competitors, and opportunities
-* **Risk Research Agent** — market risks, business constraints, technology limitations, and regulatory considerations
+---
 
-**3. Writer Agent**
+### 2. Specialized Research Agents
 
-Synthesizes the research findings and produces a validated structured report.
+The Planner Agent's output is used by two specialized research agents:
 
-**4. Structured Output**
+#### Market Research Agent
 
-The final analysis is validated using Pydantic's `MarketEvidence` schema and can be exported as a PDF report.
+Focuses on market intelligence:
+
+- Market size estimation
+- Growth trends
+- CAGR analysis
+- Competitor landscape
+- Industry opportunities
+
+#### Risk Research Agent
+
+Analyzes potential challenges:
+
+- Market risks
+- Business constraints
+- Technology limitations
+- Regulatory considerations
+
+---
+
+### 3. Writer Agent
+
+The Writer Agent synthesizes all collected evidence into a structured report.
+
+Responsibilities:
+
+- Combine research findings
+- Generate strategic insights
+- Produce validated MarketEvidence output
+- Prepare final report
 
 ---
 
 ## Key Features
 
-* ✅ Hierarchical multi-agent architecture
-* ✅ Autonomous market research workflow
-* ✅ Web-based information gathering
-* ✅ Competitor analysis
-* ✅ Risk assessment
-* ✅ Structured output validation with Pydantic
-* ✅ Automated PDF report generation
-* ✅ Streamlit-based user interface
+✅ Hierarchical multi-agent architecture  
+✅ Autonomous market research workflow  
+✅ Web-based information gathering  
+✅ Competitor analysis  
+✅ Risk assessment  
+✅ Structured output validation with Pydantic  
+✅ Automated PDF report generation  
+✅ Streamlit-based user interface  
 
 ---
 
 ## Technology Stack
 
-* Python
-* CrewAI
-* Gemini LLM
-* Serper Search API
-* Pydantic
-* Streamlit
+- Python
+- CrewAI
+- Gemini LLM
+- Serper Search API
+- Pydantic
+- Streamlit
+
+---
+
+## Demo
+
+### MarketLens Dashboard
+
+![MarketLens Dashboard](screenshots/dashboard.png)
+
+---
+
+### Market Analysis
+
+![Market Analysis](screenshots/analysis.png)
+
+---
+
+### Generated PDF Report
+
+![Generated PDF Report](screenshots/pdf_report.png)
 
 ---
 
@@ -79,19 +133,16 @@ The final analysis is validated using Pydantic's `MarketEvidence` schema and can
 
 ### Input
 
-```text
-AI Coding Assistants Market
-```
+Multi-Agent Systems Developer Platforms
 
-### Generated Report
+### Generated Report Includes
 
-The analysis includes:
-
-* Market overview
-* Market growth and CAGR
-* Competitor landscape
-* Key risks
-* Strategic insights
+- Market overview
+- Market size and CAGR
+- Economics and gross margin considerations
+- Competitive landscape
+- Key risks
+- Strategic insights
 
 ---
 
@@ -99,21 +150,21 @@ The analysis includes:
 
 This repository contains the public-facing portfolio materials for MarketLens.
 
-```text
-marketlens-ai/
-│
-├── README.md
-├── LICENSE
-│
-├── assets/
-│   └── architecture.png
-│
-├── screenshots/
-│   └── ...
-│
-└── demo/
-    └── ...
-```
+Project structure:
+
+    marketlens-ai/
+    |
+    ├── README.md
+    ├── LICENSE
+    |
+    ├── assets/
+    |   └── architecture.png
+    |
+    └── screenshots/
+        ├── dashboard.png
+        ├── analysis.png
+        └── pdf_report.png
+
 
 The full application source code is maintained separately.
 
@@ -121,9 +172,9 @@ The full application source code is maintained separately.
 
 ## Installation
 
-The public repository currently focuses on the project's architecture, documentation, and demonstration materials.
+The public repository currently focuses on project documentation, architecture, and demonstration materials.
 
-The full application can be run from the private development repository.
+The live application is available through Streamlit Community Cloud.
 
 ---
 
@@ -131,11 +182,11 @@ The full application can be run from the private development repository.
 
 Potential future enhancements include:
 
-* Retrieval-Augmented Generation (RAG) for historical reports
-* Persistent analysis memory
-* Additional specialized research agents
-* Additional market data sources
-* Advanced market forecasting
+- Retrieval-Augmented Generation (RAG) for historical reports
+- Persistent analysis memory
+- Additional specialized research agents
+- More market data sources
+- Advanced market forecasting
 
 ---
 
@@ -143,8 +194,8 @@ Potential future enhancements include:
 
 Built as a practical AI engineering portfolio project demonstrating:
 
-* Multi-agent systems
-* LLM application development
-* AI-assisted research workflows
-* Structured data validation
-* Automated report generation
+- Multi-agent systems
+- LLM application development
+- AI-assisted research workflows
+- Structured data validation
+- Automated report generation

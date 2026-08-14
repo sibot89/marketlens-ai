@@ -106,3 +106,5 @@ ai_job_market/
 This demo represents an early exploration of how multi-agent AI systems can support market intelligence workflows.
 
 The goal of MarketLens is not only to collect information, but to organize research, combine different perspectives, and generate structured insights for better decision-making.
+
+For a detailed explanation of the problem, approach, and lessons learned, see the [Case Study](case_study.md).

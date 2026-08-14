@@ -1,0 +1,48 @@
+{
+  "market_size_2026": "Estimated $8.0 Billion to $10.0 Billion for dedicated MAS developer platforms (part of a $15.0 Billion to $20.0 Billion broader autonomous AI agent market)",
+  "cagr": "46.8% for dedicated MAS Developer Platforms (42.8% - 45.6% for broad autonomous AI agent market)",
+  "traditional_vs_ai_gross_margin": "Traditional SaaS gross margins range from 75% to 85%, whereas hosted AI/MAS platforms suffer compression to 35% to 50% due to high model API inference fees, token explosion, state persistence, and cloud compute COGS.",
+  "top_competitors": [
+    {
+      "name": "LangGraph",
+      "segment": "Code-First Framework (SDK)",
+      "key_advantage": "Cyclical graph architecture, fine-grained state management, and fault-tolerant state persistence."
+    },
+    {
+      "name": "Microsoft AutoGen",
+      "segment": "Code-First Framework (SDK)",
+      "key_advantage": "Asynchronous event-driven architecture, native multi-agent conversation patterns, and strong research backing."
+    },
+    {
+      "name": "CrewAI",
+      "segment": "Code-First Framework (SDK)",
+      "key_advantage": "Intuitive role-playing agent abstraction enabling rapid developer onboarding."
+    },
+    {
+      "name": "Dify.ai",
+      "segment": "Visual / Low-Code Platform",
+      "key_advantage": "Comprehensive visual interface, integrated RAG engine, prompt engineering suite, and lifecycle management."
+    },
+    {
+      "name": "Salesforce Agentforce",
+      "segment": "Enterprise Hyperscaler Platform",
+      "key_advantage": "Deep native integration with Salesforce CRM Data Cloud alongside out-of-the-box enterprise compliance."
+    },
+    {
+      "name": "Microsoft Copilot Studio",
+      "segment": "Enterprise Hyperscaler Platform",
+      "key_advantage": "Seamless Microsoft 365 / Power Platform integration backed by enterprise Azure security."
+    }
+  ],
+  "key_risks": [
+    "Regulatory Non-Compliance & EU AI Act Fines: High-risk classifications may require strict auditability and logging.",
+    "Compounding Cascading Failure Rates: Multi-agent execution loops can significantly reduce end-to-end reliability.",
+    "Gross Margin Compression & Token Budget Explosions: Unbounded dynamic loops can increase token consumption and infrastructure costs.",
+    "Security & Indirect Prompt Injection: Unsanitized tool inputs can hijack agent intent and excessive IAM permissions increase attack surface."
+  ],
+  "key_takeaways": [
+    "Architect for Compounding Error Mitigation: Enterprise adoption requires verification gates, recursion bounds, and Human-in-the-Loop controls.",
+    "Standardize on Open Inter-Agent Protocols: Vendor-neutral standards such as MCP can reduce single-cloud lock-in.",
+    "Transition to Value-Based / Consumption Hybrid Monetization: Pricing should better reflect actual multi-agent workload."
+  ]
+}
